@@ -1,144 +1,256 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACAM - 2025</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header id="home">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#event">Event</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#registration">Registration</a></li>
+  <body class="font-poppins">
+    <header
+      id="home"
+      class="mx-auto min-h-screen w-full bg-[url('./images/ACAM-BG.png')] bg-fixed object-cover object-center"
+    >
+      <nav class="flex justify-center pt-14 duration-500">
+        <ul class="flex gap-8 text-xl font-medium">
+          <li>
+            <a href="#home" class="hover:text-picton-blue-500 transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#event"
+              class="hover:text-picton-blue-500 transition-colors"
+              >Event</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="hover:text-picton-blue-500 transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#registration"
+              class="hover:text-picton-blue-500 transition-colors"
+              >Registration</a
+            >
+          </li>
         </ul>
       </nav>
 
-      <section>
-        <img src="./images/ACAM-Logo-with-text.png" alt="ACAM Logo" />
-        <h1>
+      <section class="flex min-h-[80vh] flex-col items-center justify-center">
+        <img
+          src="./images/ACAM-Logo-with-text.png"
+          alt="ACAM Logo"
+          class="mb-6 w-2xl"
+        />
+        <h1 class="mb-6 max-w-5xl text-center text-4xl font-medium">
           From Prototypes to Progress: Advancing Innovation through Additive
           Manufacturing and AI
         </h1>
-        <p>October 22-23, 2025 | Solaire Resort, Paranaque, Metro Manila</p>
-        <a href="#event">Learn More</a>
+        <p class="mb-14 text-xl">
+          October 22-23, 2025 &vert; Solaire Resort, Paranaque, Metro Manila
+        </p>
+        <a
+          href="#event"
+          class="bg-picton-blue-500 rounded-md px-4 py-2 font-bold text-white"
+          >Learn More</a
+        >
       </section>
     </header>
 
     <main>
       <article id="event">
-        <section>
-          <p>
-            The Asian Conference on Advance Manufacturing is the region’s first
-            major event dedicated to additive manufacturing. With the theme
-            “From Prototypes to Progress: Advancing Innovation with Additive
-            Manufacturing,” it brings together experts, innovators, researchers,
-            and industry leaders to showcase breakthroughs, applications, and
-            opportunities driving industrial growth. Over two days, participants
-            will explore emerging trends, advanced materials, large-scale
-            production, prototyping, and sustainable practices through keynotes,
-            technical sessions, panels, and networking — fostering collaboration
-            and accelerating the adoption of transformative technologies across
-            Asia.
-          </p>
-          <img src="./images/design-1.png" alt="3D Printed Architecture" />
-        </section>
-
-        <section>
+        <section
+          class="container mx-auto flex items-center gap-24 py-24 text-2xl"
+        >
           <div>
             <p>
-              Winnovation Techfest is a national competition that aims to
-              showcase the creativity and ingenuity of the makers and designers
-              of our country through 3D printing. May it be industrial or
-              aesthetically made, the 3D printed models will surely inspire
-              people and other participants to push through towards excellence
-              and innovation as our country progresses with this exciting 3D
-              printing technology.
+              The
+              <strong class="text-picton-blue-600"
+                >Asian Conference on Advanced Manufacturing</strong
+              >
+              is the region's first major event dedicated to additive
+              manufacturing.
             </p>
+            &nbsp;
             <p>
-              Winnovation Techfest 2025 will take place at Solaire Resort,
-              Paranaque, Metro Manila on October 23, 2025 as one of the parallel
-              sessions of ACAM 2025.
+              With the theme
+              <em class="text-picton-blue-600"
+                >"From Prototypes to Progress,"</em
+              >
+              the two-day event brings together experts, innovators, and
+              industry leaders to explore breakthroughs in advanced materials,
+              large-scale production, prototyping, and sustainable practices.
+            </p>
+            &nbsp;
+            <p>
+              Join keynotes, panels, and networking sessions &mdash; and be part
+              of Asia's innovation movement.
             </p>
           </div>
-          <div>
+          <img
+            src="./images/design-1.png"
+            alt="3D Printed Architecture"
+            class="w-2xl"
+          />
+        </section>
+
+        <section
+          class="container mx-auto flex flex-row-reverse items-center gap-24 py-24 text-2xl"
+        >
+          <div class="w-1/2">
+            <p>
+              <strong class="text-picton-blue-600"
+                >Winnovation Techfest 2025</strong
+              >
+              is a national 3D printing competition celebrating the creativity
+              and ingenuity of makers and designers across the country.
+            </p>
+            &nbsp;
+            <p>
+              Whether industrial or aesthetic, these 3D printed creations
+              inspire participants and audiences alike to push the boundaries of
+              excellence and innovation.
+            </p>
+            &nbsp;
+            <p>
+              <strong class="text-picton-blue-600"
+                >Join us on October 23, 2025, at Solaire Resort, Parañaque,
+                Metro Manila,</strong
+              >
+              for Winnovation Techfest 2025&mdash;part of the parallel sessions
+              of ACAM 2025.
+            </p>
+          </div>
+          <div class="w-1/2">
             <img
               src="./images/winnovation-techfest.png"
               alt="Winnovation Techfest"
+              class="w-2xl"
             />
-            <img src="./images/winnovation.svg" alt="" />
-            <p>Innovat3D: Pushing Boundaries Through Additive Manufacturing</p>
+            <img src="./images/winnovation.svg" alt="" class="w-2xl" />
+            <p class="mt-6 text-center text-xl">
+              Innovat3D: Pushing Boundaries Through Additive Manufacturing
+            </p>
           </div>
         </section>
 
-        <section>
-          <div>
+        <section class="container mx-auto flex justify-evenly gap-24 py-24">
+          <div class="flex flex-col items-center gap-6 text-xl">
             <img
               src="./images/registration-qr-1.svg"
               alt="Industrial/Functional Category Registration QR Code"
+              class="w-48"
             />
-            <p>Registration link: https://form.jotform.com/252258193442458</p>
-            <p>Industrial/Functional Category</p>
+            <p>
+              Registration link:
+              <a
+                href="https://form.jotform.com/252258193442458"
+                class="text-picton-blue-500"
+                >Click Here</a
+              >
+            </p>
+            <p class="bg-blue-950 px-16 py-4 text-white">
+              Industrial/Functional Category
+            </p>
           </div>
 
-          <div>
+          <div class="flex flex-col items-center gap-6 text-xl">
             <img
               src="./images/registration-qr-2.svg"
               alt="Aesthetics & Novel Objects Category Registration QR Code"
+              class="w-48"
             />
-            <p>Registration link: https://form.jotform.com/252258361473459</p>
-            <p>Aesthetics & Novel Objects Category</p>
+            <p>
+              Registration link:
+              <a
+                href="https://form.jotform.com/252258361473459"
+                class="text-picton-blue-500"
+                >Click Here</a
+              >
+            </p>
+            <p class="bg-amber-500 px-16 py-4 text-white">
+              Aesthetics & Novel Objects Category
+            </p>
           </div>
         </section>
 
-        <section>
-          <div>
+        <section
+          class="container mx-auto flex items-center gap-24 py-24 text-xl"
+        >
+          <div class="flex flex-col items-center justify-between gap-4">
             <img
               src="./images/industrial-functional-category-img.png"
               alt="Industrial / Functional Category"
+              class="w-xl"
             />
-            <h3>Industrial / Functional Category</h3>
-            <p>
-              This category highlights 3D-printed models designed with practical
-              use in mind. Entries should demonstrate functionality,
-              problem-solving, and innovation that address real-world
-              applications in industries such as manufacturing, healthcare,
-              engineering, or everyday life.
-            </p>
+            <div>
+              <h3 class="mb-3 text-center text-3xl font-bold">
+                Industrial / Functional Category
+              </h3>
+              <p class="text-center">
+                This category highlights 3D-printed models designed with
+                practical use in mind. Entries should demonstrate functionality,
+                problem-solving, and innovation that address real-world
+                applications in industries such as manufacturing, healthcare,
+                engineering, or everyday life.
+              </p>
+            </div>
           </div>
-          <div>
+          <div class="flex flex-col items-center justify-between gap-4">
             <img
               src="./images/aesthetic-novelobjects-category-img.png"
               alt="Aesthetics & Novel Objects Category"
+              class="w-xl"
             />
-            <h3>Aesthetics & Novel Objects Category</h3>
-            <p>
-              This category focuses on creativity and artistic expression.
-              Entries may be decorative, conceptual, or experimental, showcasing
-              the unique potential of 3D printing to produce visually striking,
-              imaginative, and original designs.
-            </p>
+            <div>
+              <h3 class="mb-3 text-center text-3xl font-bold">
+                Aesthetics & Novel Objects Category
+              </h3>
+              <p class="text-center">
+                This category focuses on creativity and artistic expression.
+                Entries may be decorative, conceptual, or experimental,
+                showcasing the unique potential of 3D printing to produce
+                visually striking, imaginative, and original designs.
+              </p>
+            </div>
           </div>
         </section>
 
-        <section>
-          <h2>Speakers</h2>
-          <div>
+        <section class="container mx-auto gap-24 py-24 text-xl">
+          <h2 class="text-picton-blue-500 mb-32 text-center text-6xl font-bold">
+            Speakers
+          </h2>
+          <div class="flex justify-center space-x-28 text-center">
             <div>
-              <img src="./images/profile1.jpg" alt="Profile 1" />
+              <img
+                src="./images/profile1.jpg"
+                alt="Profile 1"
+                class="h-64 w-64 rounded-full object-cover"
+              />
               <p>LOREM IPSUM</p>
               <p>DESIGNATION</p>
             </div>
             <div>
-              <img src="./images/profile2.jpg" alt="Profile 2" />
+              <img
+                src="./images/profile2.jpg"
+                alt="Profile 2"
+                class="h-64 w-64 rounded-full object-cover"
+              />
               <p>LOREM IPSUM</p>
               <p>DESIGNATION</p>
             </div>
             <div>
-              <img src="./images/profile3.jpg" alt="Profile 3" />
+              <img
+                src="./images/profile3.jpg"
+                alt="Profile 3"
+                class="h-64 w-64 rounded-full object-cover"
+              />
               <p>LOREM IPSUM</p>
               <p>DESIGNATION</p>
             </div>
