@@ -65,10 +65,10 @@
       </section>
     </header>
 
-    <main>
+    <main class="p-7 sm:p-0">
       <article id="event">
         <section
-          class="container mx-auto flex items-center gap-24 py-24 text-2xl"
+          class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg sm:flex-row sm:gap-24 sm:py-24 sm:text-left sm:text-2xl"
         >
           <div>
             <p>
@@ -98,14 +98,14 @@
           <img
             src="./images/design-1.png"
             alt="3D Printed Architecture"
-            class="w-2xl"
+            class="w-sm sm:w-2xl"
           />
         </section>
 
         <section
-          class="container mx-auto flex flex-row-reverse items-center gap-24 py-24 text-2xl"
+          class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg sm:flex-row sm:gap-24 sm:py-24 sm:text-left sm:text-2xl"
         >
-          <div class="w-1/2">
+          <div class="sm:w-1/2">
             <p>
               <strong class="text-picton-blue-600"
                 >Winnovation Techfest 2025</strong
@@ -129,21 +129,23 @@
               of ACAM 2025.
             </p>
           </div>
-          <div class="w-1/2">
+          <div class="sm:w-1/2">
             <img
               src="./images/winnovation-techfest.png"
               alt="Winnovation Techfest"
-              class="w-2xl"
+              class="w-xl sm:w-2xl"
             />
             <img src="./images/winnovation.svg" alt="" class="w-2xl" />
-            <p class="mt-6 text-center text-xl">
+            <p class="mt-6 text-center text-sm sm:text-xl">
               Innovat3D: Pushing Boundaries Through Additive Manufacturing
             </p>
           </div>
         </section>
 
-        <section class="container mx-auto flex justify-evenly gap-24 py-24">
-          <div class="flex flex-col items-center gap-6 text-xl">
+        <section
+          class="container mx-auto flex flex-col justify-evenly gap-12 py-12 sm:flex-row sm:gap-24 sm:py-24"
+        >
+          <div class="flex flex-col items-center gap-6 text-lg sm:text-xl">
             <img
               src="./images/registration-qr-1.svg"
               alt="Industrial/Functional Category Registration QR Code"
@@ -157,12 +159,12 @@
                 >Click Here</a
               >
             </p>
-            <p class="bg-blue-950 px-16 py-4 text-white">
+            <p class="bg-blue-950 px-16 py-4 text-center text-white">
               Industrial/Functional Category
             </p>
           </div>
 
-          <div class="flex flex-col items-center gap-6 text-xl">
+          <div class="flex flex-col items-center gap-6 text-lg sm:text-xl">
             <img
               src="./images/registration-qr-2.svg"
               alt="Aesthetics & Novel Objects Category Registration QR Code"
@@ -176,14 +178,14 @@
                 >Click Here</a
               >
             </p>
-            <p class="bg-amber-500 px-16 py-4 text-white">
+            <p class="bg-amber-500 px-16 py-4 text-center text-white">
               Aesthetics & Novel Objects Category
             </p>
           </div>
         </section>
 
         <section
-          class="container mx-auto flex items-center gap-24 py-24 text-xl"
+          class="container mx-auto flex flex-col items-center gap-12 py-12 text-lg sm:flex-row sm:gap-24 sm:py-24 sm:text-xl"
         >
           <div class="flex flex-col items-center justify-between gap-4">
             <img
@@ -192,7 +194,7 @@
               class="w-xl"
             />
             <div>
-              <h3 class="mb-3 text-center text-3xl font-bold">
+              <h3 class="mb-3 text-center text-xl font-bold sm:text-3xl">
                 Industrial / Functional Category
               </h3>
               <p class="text-center">
@@ -211,7 +213,7 @@
               class="w-xl"
             />
             <div>
-              <h3 class="mb-3 text-center text-3xl font-bold">
+              <h3 class="mb-3 text-center text-xl font-bold sm:text-3xl">
                 Aesthetics & Novel Objects Category
               </h3>
               <p class="text-center">
@@ -224,12 +226,16 @@
           </div>
         </section>
 
-        <section class="container mx-auto gap-24 py-24 text-xl">
-          <h2 class="text-picton-blue-500 mb-32 text-center text-6xl font-bold">
+        <section
+          class="container mx-auto gap-12 py-12 text-lg sm:gap-24 sm:py-24 sm:text-xl"
+        >
+          <h2
+            class="text-picton-blue-500 mb-16 text-center text-3xl font-bold sm:mb-32 sm:text-6xl"
+          >
             Speakers
           </h2>
-          <div class="flex justify-center space-x-28 text-center">
-            <div>
+          <div class="flex items-center justify-center space-x-28 text-center">
+            <div class="hidden sm:block">
               <img
                 src="./images/profile1.jpg"
                 alt="Profile 1"
@@ -247,7 +253,7 @@
               <p>LOREM IPSUM</p>
               <p>DESIGNATION</p>
             </div>
-            <div>
+            <div class="hidden sm:block">
               <img
                 src="./images/profile3.jpg"
                 alt="Profile 3"
@@ -259,16 +265,22 @@
           </div>
         </section>
 
-        <section class="container mx-auto gap-24 py-24 text-xl">
-          <h2 class="text-picton-blue-500 mb-32 text-center text-6xl font-bold">
+        <section
+          class="container mx-auto gap-12 py-12 text-xl sm:gap-24 sm:py-24"
+        >
+          <h2
+            class="text-picton-blue-500 mb-16 text-center text-3xl font-bold sm:mb-32 sm:text-6xl"
+          >
             Program Schedule
           </h2>
-          <div class="flex justify-evenly">
+          <div
+            class="flex flex-col items-center gap-7 sm:flex-row sm:justify-evenly"
+          >
             <div>
               <img
                 src="./images/program-sched-day-1.png"
                 alt="Day 1 Program Schedule QR/Link"
-                class="mb-6 h-52 w-auto"
+                class="mb-2 h-24 w-auto sm:mb-6 sm:h-52"
               />
               <p class="text-center text-lg">Or use this link</p>
               <p class="text-center">
@@ -284,7 +296,7 @@
               <img
                 src="./images/program-sched-day-2.png"
                 alt="Day 2 Program Schedule QR/Link"
-                class="mb-6 h-52 w-auto"
+                class="mb-2 h-24 w-auto sm:mb-6 sm:h-52"
               />
               <p class="text-center text-lg">Or use this link</p>
               <p class="text-center">
@@ -300,18 +312,23 @@
         </section>
       </article>
 
-      <section id="about" class="container mx-auto gap-24 py-24 text-xl">
-        <h2 class="text-picton-blue-500 mb-32 text-center text-6xl font-bold">
+      <section
+        id="about"
+        class="container mx-auto gap-24 py-24 text-lg sm:text-xl"
+      >
+        <h2
+          class="text-picton-blue-500 mb-16 text-center text-3xl font-bold sm:mb-32 sm:text-6xl"
+        >
           About Us
         </h2>
-        <div class="flex gap-8">
+        <div class="flex flex-col gap-8 sm:flex-row">
           <img
             src="./images/amcen-building-with-logo.png"
             alt="AMCen Building"
-            class="h-64 w-auto"
+            class="h-36 w-auto sm:h-64"
           />
           <div>
-            <p>
+            <p class="text-center sm:text-left">
               The <strong>Advanced Manufacturing Center</strong> or
               <strong>AMCen</strong> is the Philippines' premier research
               facility in additive manufacturing (AM) and state-of-the-art
@@ -320,7 +337,9 @@
               consultancy, and other 3D-printing solutions.
             </p>
             <div class="mt-10">
-              <div class="mx-auto grid max-w-4xl grid-cols-2 gap-4">
+              <div
+                class="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2"
+              >
                 <div class="number-section-1 flex items-start">
                   <div>
                     <div class="flex-1/2">
@@ -394,12 +413,12 @@
         <img
           src="./images/dost-logos.png"
           alt="DOST Logos"
-          class="h-16 w-auto"
+          class="h-8 w-auto sm:h-16"
         />
         <img
           src="./images/amcen-logo.png"
           alt="AMCen Logo"
-          class="ml-3 h-16 w-auto"
+          class="ml-3 h-8 w-auto sm:h-16"
         />
       </div>
     </footer>
