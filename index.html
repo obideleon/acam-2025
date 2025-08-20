@@ -11,8 +11,8 @@
       id="home"
       class="mx-auto min-h-screen w-full bg-[url('./images/ACAM-BG.png')] bg-fixed object-cover object-center"
     >
-      <nav class="flex justify-center pt-14 duration-500">
-        <ul class="flex hidden gap-8 text-xl font-medium">
+      <nav class="mb-10 flex justify-center pt-14 duration-500">
+        <ul class="hidden gap-8 text-xl font-medium sm:flex">
           <li>
             <a href="#home" class="hover:text-picton-blue-500 transition-colors"
               >Home</a
@@ -27,16 +27,16 @@
           </li>
           <li>
             <a
-              href="#about"
+              href="#registration"
               class="hover:text-picton-blue-500 transition-colors"
-              >About</a
+              >Registration</a
             >
           </li>
           <li>
             <a
-              href="#registration"
+              href="#about"
               class="hover:text-picton-blue-500 transition-colors"
-              >Registration</a
+              >About</a
             >
           </li>
         </ul>
@@ -44,22 +44,25 @@
 
       <section class="flex min-h-[80vh] flex-col items-center justify-center">
         <img
-          src="./images/ACAM-Logo-with-text.png"
+          src="./images/ACAM-logo-w-shadow.png"
           alt="ACAM Logo"
-          class="mb-6 h-auto w-2xs sm:h-auto sm:w-2xl"
+          class="mb-10 h-auto w-2xs sm:h-auto sm:w-2xl"
         />
         <h1
-          class="mb-6 text-center text-xl font-medium sm:max-w-5xl sm:text-4xl"
+          class="mb-10 text-center text-lg leading-[1.5] font-medium sm:max-w-5xl sm:text-3xl"
         >
-          From Prototypes to Progress: Advancing Innovation through Additive
-          Manufacturing and AI
+          <span
+            class="text-picton-blue-500 text-3xl font-bold tracking-tight sm:text-7xl"
+            >From Prototypes to Progress:<br
+          /></span>
+          Advancing Innovation through Additive Manufacturing and AI
         </h1>
         <p class="mb-14 text-center text-lg sm:text-xl">
           October 22-23, 2025 &vert; Solaire Resort, Paranaque, Metro Manila
         </p>
         <a
           href="#event"
-          class="bg-picton-blue-500 rounded-md px-4 py-2 font-bold text-white"
+          class="bg-picton-blue-500 mb-20 rounded-md px-4 py-2 font-bold text-white"
           >Learn More</a
         >
       </section>
@@ -103,12 +106,78 @@
         </section>
 
         <section
+          class="container mx-auto gap-12 py-12 text-lg sm:gap-24 sm:py-24 sm:text-xl"
+        >
+          <h2
+            class="text-picton-blue-500 mb-16 text-center text-3xl font-bold sm:mb-32 sm:text-6xl"
+          >
+            Speakers
+          </h2>
+          <div class="flex items-center justify-center space-x-28 text-center">
+            <div class="hidden flex-col items-center sm:flex">
+              <img
+                src="./images/vytautas.jfif"
+                alt="Profile 1"
+                class="mb-4 h-52 w-52 rounded-full object-cover"
+              />
+              <p class="text-picton-blue-500 font-bold">
+                Mr. Vytautas Naslenas
+              </p>
+              <p class="text-sm">Head of Regional Office, APAC</p>
+              <!-- <p class="text-sm">COBOD</p> -->
+            </div>
+            <div class="hidden flex-col items-center sm:flex">
+              <img
+                src="./images/profile1.jpg"
+                alt="Profile 1"
+                class="mb-4 h-52 w-52 rounded-full object-cover"
+              />
+              <p class="text-picton-blue-500 font-bold">Mr. Adam Hourigan</p>
+              <p class="text-sm">
+                Channel Sales Manager, UK, Ireland, and APAC
+              </p>
+              <!-- <p class="text-sm">Meltio</p> -->
+            </div>
+            <div class="hidden flex-col items-center sm:flex">
+              <img
+                src="./images/profile1.jpg"
+                alt="Profile 1"
+                class="mb-4 h-52 w-52 rounded-full object-cover"
+              />
+              <p class="text-picton-blue-500 font-bold">Mr. Chun Kit Kan</p>
+              <p class="text-sm">Vice President, APAC</p>
+              <!-- <p class="text-sm">Metal + Polymer Desktop Metal</p> -->
+            </div>
+            <!-- <div>
+              <img
+                src="./images/profile2.jpg"
+                alt="Profile 2"
+                class="mb-4 h-52 w-52 rounded-full object-cover"
+              />
+              <p>LOREM IPSUM</p>
+              <p>DESIGNATION</p>
+            </div>
+            <div class="hidden sm:block">
+              <img
+                src="./images/profile3.jpg"
+                alt="Profile 3"
+                class="mb-4 h-52 w-52 rounded-full object-cover"
+              />
+              <p>LOREM IPSUM</p>
+              <p>DESIGNATION</p>
+            </div> -->
+          </div>
+        </section>
+
+        <section
           class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg sm:flex-row sm:gap-24 sm:py-24 sm:text-left sm:text-2xl"
+          id="registration"
         >
           <div class="sm:w-1/2">
             <p>
+              The
               <strong class="text-picton-blue-600"
-                >Winnovation Techfest 2025</strong
+                >Philippines' Winnovation Techfest 2025</strong
               >
               is a national 3D printing competition celebrating the creativity
               and ingenuity of makers and designers across the country.
@@ -227,45 +296,6 @@
         </section>
 
         <section
-          class="container mx-auto gap-12 py-12 text-lg sm:gap-24 sm:py-24 sm:text-xl"
-        >
-          <h2
-            class="text-picton-blue-500 mb-16 text-center text-3xl font-bold sm:mb-32 sm:text-6xl"
-          >
-            Speakers
-          </h2>
-          <div class="flex items-center justify-center space-x-28 text-center">
-            <div class="hidden sm:block">
-              <img
-                src="./images/profile1.jpg"
-                alt="Profile 1"
-                class="h-52 w-52 rounded-full object-cover"
-              />
-              <p>LOREM IPSUM</p>
-              <p>DESIGNATION</p>
-            </div>
-            <div>
-              <img
-                src="./images/profile2.jpg"
-                alt="Profile 2"
-                class="h-52 w-52 rounded-full object-cover"
-              />
-              <p>LOREM IPSUM</p>
-              <p>DESIGNATION</p>
-            </div>
-            <div class="hidden sm:block">
-              <img
-                src="./images/profile3.jpg"
-                alt="Profile 3"
-                class="h-52 w-52 rounded-full object-cover"
-              />
-              <p>LOREM IPSUM</p>
-              <p>DESIGNATION</p>
-            </div>
-          </div>
-        </section>
-
-        <section
           class="container mx-auto gap-12 py-12 text-xl sm:gap-24 sm:py-24"
         >
           <h2
@@ -321,11 +351,11 @@
         >
           About Us
         </h2>
-        <div class="flex flex-col gap-8 sm:flex-row">
+        <div class="mb-28 flex flex-col gap-8 sm:flex-row">
           <img
             src="./images/amcen-building-with-logo.png"
             alt="AMCen Building"
-            class="h-36 w-auto sm:h-64"
+            class="h-auto w-full sm:w-xl"
           />
           <div>
             <p class="text-center sm:text-left">
@@ -392,17 +422,21 @@
             </div>
           </div>
         </div>
-        <div class="mt-24">
+        <div class="flex flex-col gap-8 sm:flex-row-reverse">
           <img
-            src="./images/itdi-logo.png"
+            src="./images/ITDI-building-nobg-w-logo.png"
             alt="ITDI Logo"
-            class="mx-auto h-24 w-auto"
+            class="h-auto w-full sm:max-w-xl"
           />
-          <p class="mt-10 text-center">
+          <p class="mt-10 text-center sm:text-left">
             The <strong>Industrial Technology Development Institute</strong> is
             an agency of the Department of Science and Technology mandated to
             undertake research and development (R&D), conduct knowledge and
             technology transfer, and provide technical services.
+            <strong class="text-red-500"
+              >(If you want to replace the current image. Please provide
+              one.)</strong
+            >
           </p>
         </div>
       </section>
