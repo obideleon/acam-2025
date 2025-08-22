@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACAM - 2025</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -154,44 +158,57 @@
             Speakers
           </h2>
           <div
-            class="flex items-center justify-center text-center"
+            class="swiper speakers-swiper mx-auto w-full max-w-5xl"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <div class="flex flex-col items-center 2xl:flex">
-              <img
-                src="./images/vytautas.jfif"
-                alt="Profile 1"
-                class="mb-4 max-h-32 max-w-32 rounded-full object-cover 2xl:max-h-52 2xl:max-w-52"
-              />
-              <p class="text-picton-blue-500 font-bold">
-                Mr. Vytautas Naslenas
-              </p>
-              <p class="text-sm">Head of Regional Office, APAC</p>
-              <!-- <p class="text-sm">COBOD</p> -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="flex flex-col items-center py-8">
+                  <img
+                    src="./images/vytautas.jfif"
+                    alt="Vytautas Naslenas"
+                    class="border-picton-blue-500 mb-4 max-h-32 max-w-32 rounded-full border-4 object-cover 2xl:max-h-52 2xl:max-w-52"
+                  />
+                  <p class="text-picton-blue-500 text-center font-bold">
+                    Mr. Vytautas Naslenas
+                  </p>
+                  <p class="text-center text-sm">
+                    Head of Regional Office, APAC
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col items-center py-8">
+                  <img
+                    src="./images/profile1.jpg"
+                    alt="Adam Hourigan"
+                    class="border-picton-blue-500 mb-4 max-h-32 max-w-32 rounded-full border-4 object-cover 2xl:max-h-52 2xl:max-w-52"
+                  />
+                  <p class="text-picton-blue-500 text-center font-bold">
+                    Mr. Adam Hourigan
+                  </p>
+                  <p class="text-center text-sm">
+                    Channel Sales Manager, UK, Ireland, and APAC
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col items-center py-8">
+                  <img
+                    src="./images/profile1.jpg"
+                    alt="Chun Kit Kan"
+                    class="border-picton-blue-500 mb-4 max-h-32 max-w-32 rounded-full border-4 object-cover 2xl:max-h-52 2xl:max-w-52"
+                  />
+                  <p class="text-picton-blue-500 text-center font-bold">
+                    Mr. Chun Kit Kan
+                  </p>
+                  <p class="text-center text-sm">Vice President, APAC</p>
+                </div>
+              </div>
             </div>
-            <div class="hidden flex-col items-center lg:flex">
-              <img
-                src="./images/profile1.jpg"
-                alt="Profile 1"
-                class="mb-4 max-h-32 max-w-32 rounded-full object-cover 2xl:max-h-52 2xl:max-w-52"
-              />
-              <p class="text-picton-blue-500 font-bold">Mr. Adam Hourigan</p>
-              <p class="text-sm">
-                Channel Sales Manager, UK, Ireland, and APAC
-              </p>
-              <!-- <p class="text-sm">Meltio</p> -->
-            </div>
-            <div class="hidden flex-col items-center lg:flex">
-              <img
-                src="./images/profile1.jpg"
-                alt="Profile 1"
-                class="mb-4 max-h-32 max-w-32 rounded-full object-cover 2xl:max-h-52 2xl:max-w-52"
-              />
-              <p class="text-picton-blue-500 font-bold">Mr. Chun Kit Kan</p>
-              <p class="text-sm">Vice President, APAC</p>
-              <!-- <p class="text-sm">Metal + Polymer Desktop Metal</p> -->
-            </div>
+
+            <div class="swiper-pagination mt-4"></div>
           </div>
         </section>
 
@@ -575,10 +592,15 @@
       </div>
     </footer>
 
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- AOS (Animate on Scroll Package) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <script src="main.js"></script>
   </body>
 </html>
