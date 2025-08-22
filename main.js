@@ -116,3 +116,51 @@ const swiper = new Swiper(".speakers-swiper", {
     },
   },
 });
+
+// Burger Menu
+const navMenu = document.getElementById("nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+const hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("left-[0]");
+  hamburger.classList.toggle("ri-close-large-line");
+});
+
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.toggle("left-[0]");
+    hamburger.classList.toggle("ri-close-large-line");
+  });
+});
+
+// Active Link (robust): only target sections with IDs and account for sticky nav height
+const activeLink = () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const nav = document.querySelector("#navbar nav");
+  const navHeight = nav ? nav.offsetHeight : 0;
+  const scrollY = window.scrollY;
+
+  let current = "home";
+
+  sections.forEach((section) => {
+    const id = section.getAttribute("id");
+    const sectionTop = section.offsetTop - (navHeight + 20);
+    const sectionBottom = sectionTop + section.offsetHeight;
+    if (scrollY >= sectionTop && scrollY < sectionBottom) {
+      current = id;
+    }
+  });
+
+  navLinks.forEach((item) => {
+    item.classList.remove("active");
+    const href = item.getAttribute("href") || "";
+    if (href.includes(`#${current}`)) {
+      item.classList.add("active");
+    }
+  });
+};
+
+window.addEventListener("scroll", activeLink, { passive: true });
+window.addEventListener("load", activeLink);

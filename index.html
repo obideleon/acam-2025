@@ -6,48 +6,57 @@
     <title>ACAM - 2025</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-poppins overflow-x-hidden bg-gray-50">
-    <header
-      id="home"
-      class="mx-auto min-h-screen w-full bg-[url('./images/ACAM-BG.png')] bg-fixed object-cover object-center p-7"
-    >
-      <nav class="mb-10 flex justify-center pt-14 duration-500">
-        <ul class="hidden gap-8 text-xl font-medium 2xl:flex">
-          <li>
-            <a href="#home" class="hover:text-picton-blue-500 transition-colors"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#event"
-              class="hover:text-picton-blue-500 transition-colors"
-              >Event</a
-            >
-          </li>
-          <li>
-            <a
-              href="#registration"
-              class="hover:text-picton-blue-500 transition-colors"
-              >Registration</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="hover:text-picton-blue-500 transition-colors"
-              >About</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header id="navbar" class="fixed top-0 left-0 z-50 w-screen">
+      <nav
+        class="bg-opacity-90 sticky top-0 z-50 flex h-16 items-center justify-end bg-gray-50 p-7 shadow-md backdrop-blur sm:h-20 lg:justify-center 2xl:p-0"
+      >
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] flex min-h-screen w-full items-center justify-center overflow-hidden bg-gray-50 backdrop-blur-sm duration-300 lg:static lg:min-h-fit lg:w-auto lg:bg-transparent"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li>
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
 
-      <section class="flex min-h-[80vh] flex-col items-center justify-center">
+            <li>
+              <a href="#event" class="nav-link">Event</a>
+            </li>
+
+            <li>
+              <a href="#registration" class="nav-link">Registration</a>
+            </li>
+
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="z-50 cursor-pointer text-xl sm:text-3xl lg:hidden">
+          <i class="ri-menu-line w-6" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="flex min-h-[100vh] flex-col items-center justify-center bg-[url('./images/ACAM-BG.png')] bg-fixed object-cover object-center p-7"
+        id="home"
+      >
         <img
           src="./images/ACAM-logo-w-shadow.png"
           alt="ACAM Logo"
@@ -99,281 +108,281 @@
           </div>
         </div>
       </section>
-    </header>
-
-    <main class="p-7 2xl:p-0">
-      <article id="event">
-        <section
-          class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg lg:flex-row 2xl:flex-row 2xl:gap-24 2xl:py-24 2xl:text-left 2xl:text-2xl"
-        >
-          <div
-            class="lg:flex-1/2"
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-delay="500"
+      <article class="p-7 2xl:p-0">
+        <section id="event">
+          <section
+            class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg lg:flex-row 2xl:flex-row 2xl:gap-24 2xl:py-24 2xl:text-left 2xl:text-2xl"
           >
-            <p>
-              The
-              <strong class="text-picton-blue-600"
-                >Asian Conference on Advanced Manufacturing</strong
-              >
-              is the second international conference dedicated to additive
-              manufacturing held in the Philippines.
-            </p>
-            &nbsp;
-            <p>
-              With the theme
-              <em class="text-picton-blue-600"
-                >"From Prototypes to Progress: Advancing Innovation through
-                Additive Manufacturing and AI"</em
-              >
-              the two-day event brings together experts, innovators, and
-              industry leaders to explore breakthroughs in advanced materials,
-              large-scale production, prototyping, and sustainable practices.
-            </p>
-            &nbsp;
-            <p>
-              Join keynotes, panels, and networking sessions &mdash; and be part
-              of Asia's innovation movement.
-            </p>
-          </div>
-          <img
-            src="./images/design-1.png"
-            alt="3D Printed Architecture"
-            class="h-auto w-full lg:h-56 lg:w-auto lg:flex-1/2 xl:h-72 2xl:h-96"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="800"
-          />
-        </section>
-
-        <section
-          class="container mx-auto gap-12 py-12 text-lg lg:text-xl 2xl:gap-24 2xl:py-24"
-        >
-          <h2
-            class="text-picton-blue-500 mb-10 text-center text-3xl font-bold 2xl:mb-32 2xl:text-6xl"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            Speakers
-          </h2>
-          <div
-            class="swiper speakers-swiper mx-auto w-full max-w-5xl"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <div class="swiper-wrapper">
-              <!-- Data will be coming from main.js, as well as DOM manipulation -->
+            <div
+              class="lg:flex-1/2"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <p>
+                The
+                <strong class="text-picton-blue-600"
+                  >Asian Conference on Advanced Manufacturing</strong
+                >
+                is the second international conference dedicated to additive
+                manufacturing held in the Philippines.
+              </p>
+              &nbsp;
+              <p>
+                With the theme
+                <em class="text-picton-blue-600"
+                  >"From Prototypes to Progress: Advancing Innovation through
+                  Additive Manufacturing and AI"</em
+                >
+                the two-day event brings together experts, innovators, and
+                industry leaders to explore breakthroughs in advanced materials,
+                large-scale production, prototyping, and sustainable practices.
+              </p>
+              &nbsp;
+              <p>
+                Join keynotes, panels, and networking sessions &mdash; and be
+                part of Asia's innovation movement.
+              </p>
             </div>
-
-            <div class="swiper-pagination mt-4"></div>
-          </div>
-        </section>
-
-        <section
-          class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg lg:flex-row-reverse 2xl:gap-24 2xl:py-24 2xl:text-left 2xl:text-2xl"
-          id="registration"
-        >
-          <div
-            class="lg:flex-1/2"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <p>
-              The
-              <strong class="text-picton-blue-600"
-                >Philippines' Winnovation Techfest 2025</strong
-              >
-              is a national 3D printing competition celebrating the creativity
-              and ingenuity of makers and designers across the country.
-            </p>
-            &nbsp;
-            <p>
-              Whether industrial or aesthetic, these 3D printed creations
-              inspire participants and audiences alike to push the boundaries of
-              excellence and innovation.
-            </p>
-            &nbsp;
-            <p>
-              <strong class="text-picton-blue-600"
-                >Join us on October 23, 2025, at Solaire Resort, Parañaque,
-                Metro Manila,</strong
-              >
-              for Winnovation Techfest 2025&mdash;part of the parallel sessions
-              of ACAM 2025.
-            </p>
-          </div>
-          <div
-            class="lg:flex-1/2"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-          >
             <img
-              src="./images/winnovation-techfest.png"
-              alt="Winnovation Techfest"
-              class="w-full lg:w-2xl"
+              src="./images/design-1.png"
+              alt="3D Printed Architecture"
+              class="h-auto w-full lg:h-56 lg:w-auto lg:flex-1/2 xl:h-72 2xl:h-96"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="800"
             />
-            <img src="./images/winnovation.svg" alt="" class="w-2xl" />
-            <p class="mt-6 text-center text-sm 2xl:text-xl">
-              Innovat3D: Pushing Boundaries Through Additive Manufacturing
-            </p>
-          </div>
-        </section>
+          </section>
 
-        <section
-          class="container mx-auto flex flex-col justify-evenly gap-24 py-12 md:flex-row 2xl:py-24"
-        >
-          <div
-            class="flex flex-col items-center gap-6 text-lg 2xl:text-xl"
-            data-aos="flip-right"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+          <section
+            class="container mx-auto gap-12 py-12 text-lg lg:text-xl 2xl:gap-24 2xl:py-24"
           >
-            <img
-              src="./images/registration-qr-1.svg"
-              alt="Industrial/Functional Category Registration QR Code"
-              class="w-48"
-            />
-            <p class="text-center">
-              Downloadable Mechanics:
-              <a
-                href="https://form.jotform.com/252258193442458"
-                class="text-picton-blue-500"
-                >Click Here</a
-              >
-            </p>
-            <p class="bg-blue-950 px-16 py-4 text-center text-white">
-              Industrial/Functional Category
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center gap-6 text-lg 2xl:text-xl"
-            data-aos="flip-left"
-            data-aos-duration="1500"
-            data-aos-delay="500"
-          >
-            <img
-              src="./images/registration-qr-2.svg"
-              alt="Aesthetics & Novel Objects Category Registration QR Code"
-              class="w-48"
-            />
-            <p class="text-center">
-              Downloadable Mechanics:
-              <a
-                href="https://form.jotform.com/252258361473459"
-                class="text-picton-blue-500"
-                >Click Here</a
-              >
-            </p>
-            <p class="bg-amber-500 px-16 py-4 text-center text-white">
-              Aesthetics & Novel Objects Category
-            </p>
-          </div>
-        </section>
-
-        <section
-          class="container mx-auto flex flex-col items-center gap-12 py-12 text-lg lg:flex-row 2xl:gap-24 2xl:py-24 2xl:text-xl"
-        >
-          <div class="flex flex-col items-center justify-between gap-4">
-            <img
-              src="./images/industrial-functional-category-img.png"
-              alt="Industrial / Functional Category"
-              class="w-xl"
+            <h2
+              class="text-picton-blue-500 mb-10 text-center text-3xl font-bold 2xl:mb-32 2xl:text-6xl"
               data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              Speakers
+            </h2>
+            <div
+              class="swiper speakers-swiper mx-auto w-full max-w-5xl"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div class="swiper-wrapper">
+                <!-- Data will be coming from main.js, as well as DOM manipulation -->
+              </div>
+
+              <div class="swiper-pagination mt-4"></div>
+            </div>
+          </section>
+
+          <section
+            class="container mx-auto gap-12 py-12 text-xl 2xl:gap-24 2xl:py-24"
+          >
+            <h2
+              class="text-picton-blue-500 mb-16 text-center text-3xl font-bold 2xl:mb-32 2xl:text-6xl"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              Program Schedule
+            </h2>
+            <div
+              class="flex flex-col items-center gap-12 md:flex-row md:justify-evenly"
+            >
+              <div data-aos="flip-left" data-aos-duration="1000">
+                <img
+                  src="./images/program-sched-day-1.png"
+                  alt="Day 1 Program Schedule QR/Link"
+                  class="mb-2 h-24 w-auto 2xl:mb-6 2xl:h-52"
+                />
+                <p class="text-center text-lg">Or use this link</p>
+                <p class="text-center">
+                  <a
+                    class="text-picton-blue-500"
+                    href="https://bit.ly/ACAMDAY1"
+                    target="_blank"
+                    >bit.ly/ACAMDAY1</a
+                  >
+                </p>
+              </div>
+              <div data-aos="flip-right" data-aos-duration="1500">
+                <img
+                  src="./images/program-sched-day-2.png"
+                  alt="Day 2 Program Schedule QR/Link"
+                  class="mb-2 h-24 w-auto 2xl:mb-6 2xl:h-52"
+                />
+                <p class="text-center text-lg">Or use this link</p>
+                <p class="text-center">
+                  <a
+                    class="text-picton-blue-500"
+                    href="https://bit.ly/ACAMDAY1"
+                    target="_blank"
+                    >bit.ly/ACAMDAY2</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="registration">
+          <section
+            class="container mx-auto flex flex-col-reverse items-center gap-12 py-12 text-center text-lg lg:flex-row-reverse 2xl:gap-24 2xl:py-24 2xl:text-left 2xl:text-2xl"
+          >
+            <div
+              class="lg:flex-1/2"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <p>
+                The
+                <strong class="text-picton-blue-600"
+                  >Philippines' Winnovation Techfest 2025</strong
+                >
+                is a national 3D printing competition celebrating the creativity
+                and ingenuity of makers and designers across the country.
+              </p>
+              &nbsp;
+              <p>
+                Whether industrial or aesthetic, these 3D printed creations
+                inspire participants and audiences alike to push the boundaries
+                of excellence and innovation.
+              </p>
+              &nbsp;
+              <p>
+                <strong class="text-picton-blue-600"
+                  >Join us on October 23, 2025, at Solaire Resort, Parañaque,
+                  Metro Manila,</strong
+                >
+                for Winnovation Techfest 2025&mdash;part of the parallel
+                sessions of ACAM 2025.
+              </p>
+            </div>
+            <div
+              class="lg:flex-1/2"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./images/winnovation-techfest.png"
+                alt="Winnovation Techfest"
+                class="w-full lg:w-2xl"
+              />
+              <img src="./images/winnovation.svg" alt="" class="w-2xl" />
+              <p class="mt-6 text-center text-sm 2xl:text-xl">
+                Innovat3D: Pushing Boundaries Through Additive Manufacturing
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="container mx-auto flex flex-col justify-evenly gap-24 py-12 md:flex-row 2xl:py-24"
+          >
+            <div
+              class="flex flex-col items-center gap-6 text-lg 2xl:text-xl"
+              data-aos="flip-right"
               data-aos-duration="1000"
               data-aos-delay="500"
-            />
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
             >
-              <h3 class="mb-3 text-center text-xl font-bold 2xl:text-3xl">
-                Industrial / Functional Category
-              </h3>
+              <img
+                src="./images/registration-qr-1.svg"
+                alt="Industrial/Functional Category Registration QR Code"
+                class="w-48"
+              />
               <p class="text-center">
-                This category highlights 3D-printed models designed with
-                practical use in mind. Entries should demonstrate functionality,
-                problem-solving, and innovation that address real-world
-                applications in industries such as manufacturing, healthcare,
-                engineering, or everyday life.
+                Downloadable Mechanics:
+                <a
+                  href="https://form.jotform.com/252258193442458"
+                  class="text-picton-blue-500"
+                  >Click Here</a
+                >
+              </p>
+              <p class="bg-blue-950 px-16 py-4 text-center text-white">
+                Industrial/Functional Category
               </p>
             </div>
-          </div>
-          <div class="flex flex-col items-center justify-between gap-4">
-            <img
-              src="./images/aesthetic-novelobjects-category-img.png"
-              alt="Aesthetics & Novel Objects Category"
-              class="w-xl"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            />
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="1100"
-            >
-              <h3 class="mb-3 text-center text-xl font-bold 2xl:text-3xl">
-                Aesthetics & Novel Objects Category
-              </h3>
-              <p class="text-center">
-                This category focuses on creativity and artistic expression.
-                Entries may be decorative, conceptual, or experimental,
-                showcasing the unique potential of 3D printing to produce
-                visually striking, imaginative, and original designs.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        <section
-          class="container mx-auto gap-12 py-12 text-xl 2xl:gap-24 2xl:py-24"
-        >
-          <h2
-            class="text-picton-blue-500 mb-16 text-center text-3xl font-bold 2xl:mb-32 2xl:text-6xl"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            Program Schedule
-          </h2>
-          <div
-            class="flex flex-col items-center gap-12 md:flex-row md:justify-evenly"
-          >
-            <div data-aos="flip-left" data-aos-duration="1000">
+            <div
+              class="flex flex-col items-center gap-6 text-lg 2xl:text-xl"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               <img
-                src="./images/program-sched-day-1.png"
-                alt="Day 1 Program Schedule QR/Link"
-                class="mb-2 h-24 w-auto 2xl:mb-6 2xl:h-52"
+                src="./images/registration-qr-2.svg"
+                alt="Aesthetics & Novel Objects Category Registration QR Code"
+                class="w-48"
               />
-              <p class="text-center text-lg">Or use this link</p>
               <p class="text-center">
+                Downloadable Mechanics:
                 <a
+                  href="https://form.jotform.com/252258361473459"
                   class="text-picton-blue-500"
-                  href="https://bit.ly/ACAMDAY1"
-                  target="_blank"
-                  >bit.ly/ACAMDAY1</a
+                  >Click Here</a
                 >
               </p>
-            </div>
-            <div data-aos="flip-right" data-aos-duration="1500">
-              <img
-                src="./images/program-sched-day-2.png"
-                alt="Day 2 Program Schedule QR/Link"
-                class="mb-2 h-24 w-auto 2xl:mb-6 2xl:h-52"
-              />
-              <p class="text-center text-lg">Or use this link</p>
-              <p class="text-center">
-                <a
-                  class="text-picton-blue-500"
-                  href="https://bit.ly/ACAMDAY1"
-                  target="_blank"
-                  >bit.ly/ACAMDAY2</a
-                >
+              <p class="bg-amber-500 px-16 py-4 text-center text-white">
+                Aesthetics & Novel Objects Category
               </p>
             </div>
-          </div>
+          </section>
+
+          <section
+            class="container mx-auto flex flex-col items-center gap-12 py-12 text-lg lg:flex-row 2xl:gap-24 2xl:py-24 2xl:text-xl"
+          >
+            <div class="flex flex-col items-center justify-between gap-4">
+              <img
+                src="./images/industrial-functional-category-img.png"
+                alt="Industrial / Functional Category"
+                class="w-xl"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              />
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
+                <h3 class="mb-3 text-center text-xl font-bold 2xl:text-3xl">
+                  Industrial / Functional Category
+                </h3>
+                <p class="text-center">
+                  This category highlights 3D-printed models designed with
+                  practical use in mind. Entries should demonstrate
+                  functionality, problem-solving, and innovation that address
+                  real-world applications in industries such as manufacturing,
+                  healthcare, engineering, or everyday life.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-between gap-4">
+              <img
+                src="./images/aesthetic-novelobjects-category-img.png"
+                alt="Aesthetics & Novel Objects Category"
+                class="w-xl"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              />
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1100"
+              >
+                <h3 class="mb-3 text-center text-xl font-bold 2xl:text-3xl">
+                  Aesthetics & Novel Objects Category
+                </h3>
+                <p class="text-center">
+                  This category focuses on creativity and artistic expression.
+                  Entries may be decorative, conceptual, or experimental,
+                  showcasing the unique potential of 3D printing to produce
+                  visually striking, imaginative, and original designs.
+                </p>
+              </div>
+            </div>
+          </section>
         </section>
       </article>
 
